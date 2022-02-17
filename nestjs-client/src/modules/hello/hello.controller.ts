@@ -25,7 +25,7 @@ export class HelloController implements OnModuleInit {
   }
 
   @Get(':name')
-  getById(@Param('name') name: string): Observable<HelloReply> {
+  SayHello(@Param('name') name: string): Observable<HelloReply> {
     return this.helloService.SayHello({ name: name });
   }
 }
